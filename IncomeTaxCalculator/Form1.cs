@@ -45,5 +45,9 @@ namespace IncomeTaxCalculator
             this.Close();
         }
 
+        private void txtTaxableIncome_TextChanged(object sender, EventArgs e)
+        {
+            txtTaxableIncomeOwed.Clear();
+        }
     }
 }

@@ -39,7 +39,7 @@
             // btnCalculate
             // 
             btnCalculate.Location = new Point(144, 180);
-            btnCalculate.Margin = new Padding(2, 2, 2, 2);
+            btnCalculate.Margin = new Padding(2);
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(78, 20);
             btnCalculate.TabIndex = 1;
@@ -50,7 +50,7 @@
             // btnExit
             // 
             btnExit.Location = new Point(345, 180);
-            btnExit.Margin = new Padding(2, 2, 2, 2);
+            btnExit.Margin = new Padding(2);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(78, 20);
             btnExit.TabIndex = 2;
@@ -81,15 +81,16 @@
             // txtTaxableIncome
             // 
             txtTaxableIncome.Location = new Point(300, 59);
-            txtTaxableIncome.Margin = new Padding(2, 2, 2, 2);
+            txtTaxableIncome.Margin = new Padding(2);
             txtTaxableIncome.Name = "txtTaxableIncome";
             txtTaxableIncome.Size = new Size(106, 23);
             txtTaxableIncome.TabIndex = 0;
+            txtTaxableIncome.TextChanged += txtTaxableIncome_TextChanged;
             // 
             // txtTaxableIncomeOwed
             // 
             txtTaxableIncomeOwed.Location = new Point(300, 114);
-            txtTaxableIncomeOwed.Margin = new Padding(2, 2, 2, 2);
+            txtTaxableIncomeOwed.Margin = new Padding(2);
             txtTaxableIncomeOwed.Name = "txtTaxableIncomeOwed";
             txtTaxableIncomeOwed.ReadOnly = true;
             txtTaxableIncomeOwed.Size = new Size(106, 23);
@@ -108,7 +109,7 @@
             Controls.Add(lblTaxableIncome);
             Controls.Add(btnExit);
             Controls.Add(btnCalculate);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
